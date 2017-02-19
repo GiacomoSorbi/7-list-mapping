@@ -28,3 +28,20 @@
   background-color: #999;
   min-height: 200px;
 }
+
+.menu-main, .menu-opt {
+  display: inline-block;
+  color: #fff;
+  background-color: #65f;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu-main:disabled, .menu-opt:disabled {
+  color: #aaa;
+  background-color: #ddd;
+}
+
+ul {
+  margin: 0;
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Container from './Container.js';
 
 class MenuBar extends Component {
 
@@ -7,7 +6,16 @@ class MenuBar extends Component {
 
   render() {
     return (
-        // create MenuBar here...
+      <ul>
+        {this.props.items.map((item, key) => 
+          <li
+            className={item.classes}
+            onClick={item.action}
+            disabled={item.status === 'disabled'}>
+              {item.title}
+          </li>
+        )}
+      </ul>
     );
   }
 }
