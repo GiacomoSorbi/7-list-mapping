@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class MenuBar extends Component {
 
 
@@ -8,11 +7,14 @@ class MenuBar extends Component {
     return (
       <ul>
         {this.props.items.map((item, key) => 
-          <li
-            className={item.classes}
-            onClick={item.action}
-            disabled={item.status === 'disabled'}>
+          <li className={item.classes}>
+            <button
+              className='menu-button'
+              onClick={item.action}
+              disabled={item.status === 'disabled'}
+            >
               {item.title}
+            </button>
           </li>
         )}
       </ul>

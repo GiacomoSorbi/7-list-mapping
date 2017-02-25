@@ -21,7 +21,7 @@ class Container extends Component {
         return (
             <div className="container">
                 <MenuBar items={menuItems}/>
-                <div>
+                <div className='main'>
                     <p>You are now viewing page: {this.state.display}</p>
                 </div>
             </div>

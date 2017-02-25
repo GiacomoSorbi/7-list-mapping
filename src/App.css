@@ -1,3 +1,8 @@
+html {
+  color: #fff;
+  font-size: 18px;
+}
+
 .App {
   text-align: center;
 }
@@ -11,11 +16,6 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {
@@ -25,16 +25,35 @@
 
 .container {
   display: inline-block;
-  background-color: #999;
+  background-color: #333;
   min-height: 200px;
 }
 
 .menu-main, .menu-opt {
   display: inline-block;
-  color: #fff;
-  background-color: #65f;
+  margin: 0 1px;
+}
+
+.menu-button {
   padding: 20px;
+  border: none;
+  background-color: #46f;
+  color: #fff;
   cursor: pointer;
+  font-size: 18px;
+}
+
+.menu-button:disabled {
+  background-color: #8af;
+  cursor: auto;
+}
+
+.menu-opt:first-child {
+  margin-right: 1px;
+}
+
+.menu-opt:last-child {
+  margin-left: 1px;
 }
 
 .menu-main:disabled, .menu-opt:disabled {
@@ -44,4 +63,9 @@
 
 ul {
   margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 0 20px;
 }
