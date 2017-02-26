@@ -3,11 +3,9 @@ import Container from './Container.js';
 
 class MenuBar extends Component {
 
-
-
   render() {
     return (
-        // create MenuBar here...
+      // create MenuBar here...
     );
   }
 }
